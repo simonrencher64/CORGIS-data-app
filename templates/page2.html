@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% set active_page = "page2" %}
+
+{% block title %}Explosions by Year{% endblock %}
+
+{% block content %}
+    <!--page content-->
+    <h1>Explosions by Year</h1>
+	<body>
+
+        <form action="/explosionsbyyear">
+          <select name="year"> <!-- add onchange="this.form.submit()" to submit/update the form when an option is selected.  Usefull for then displaying county options. -->
+            {{ year_options }}
+          </select>
+          <br><br>
+          <input type="submit" value="Submit">
+        </form>
+        <div id="words">
+            <p>{{ words1 }}</p>
+			<p>{{ words2 }}</p>
+        </div>
+		<div>
+			<p>{{ words3 }}</p>
+		</div>
+    </body>
+{% endblock %}

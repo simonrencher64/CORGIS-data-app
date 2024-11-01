@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% set active_page = "home" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <!--page content-->
+	<h1>
+	About the Nuclear Explosion Data
+	</h1>
+   	<p>
+      	The data used in this form app is from the CORGIS dataset project. The data is details about nuclear explosions from before 2000. The data does not have data on magnitude but does have data on the yield of the explosions. 
+	</p>
+	<p>
+	Some of the details that the data has is the country that caused the explosion, the coordinates of the explosion, the reason for the explosion, how the explosion was set off, and the yield of the explosion.
+ 	The yield of the explosion is measured in kilotons. One kiloton is the energy released by 1000 tons of TNT. 
+	</p>
+	<p>
+	The reason for the explosion can be a variety of things, some of them being combat, military training, for researching, or for weapons development.
+	The way an explosion can be set off include atmospheric, underground, airplane deployed, rocket, tower, balloon drop, water surface, underwater, shaft, or tunnel.
+    	</p>
+	<br>
+	<h3>
+	Sources
+	</h3>
+	<div>
+		<a href="https://en.wikipedia.org/wiki/United_States_Department_of_Energy">Wikipedia article about the Department of Energy</a><br>
+	</div>
+	<div>
+		<a href="https://www.energy.gov/nnsa/maintaining-stockpile#:~:text=NNSA's%20Weapon%20Technology%20and%20Manufacturing,robust%2C%20and%20responsive%20weapons%20complex.">Article about how we maintain our nuclear stockpile</a><br>
+	</div>
+	<div>
+		<a href="https://www.osti.gov/opennet/manhattan-project-history/Processes/BombTesting/yield.html#:~:text=Yield%20is%20usually%20measured%20in,one%20million%20tons%20of%20TNT).">Article about the yield of atomic bombs</a>
+	</div>
+{% endblock %}
